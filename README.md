@@ -20,3 +20,25 @@ Enter **WORDS**. Published independently, **WORDS** is a Bitcoin journal that we
 **WORDS** follows the philosophy of Bitcoin by making this project open source. Because open source code is publicly accessible, students and can easily study the contents of **WORDS** as they do their own research. Users can easily fork **WORDS** and build their own copy.
 
 [![](https://badgen.net/badge/Built%20with/❤️%20by%20Joe/F96854)](https://twitter.com/_joerodgers)
+
+## Building 
+In order to run locally, ensure you have Rails installed. Using HOMEBREW:
+
+```ALGOLIA_API_KEY='848a5f8d9bfed7c9f51a3f795c9a6735' bundle exec jekyll algolia
+brew install rails
+```bash
+
+Next, update **_config.yml** with the account information from [Algolia](https://www.algolia.com/). In order to build, you will need the ApplicationID, Frontend API key and Admin API Key. You also need to provide a value for the index key in **_config.yml**; although it can be any reasonable string. 
+
+Once the config file is updated, prepare to build as follows:
+
+```
+bundle install
+```bash
+
+This preceding command builds the gem file and installs Rails dependecies. 
+
+```
+ALGOLIA_API_KEY='USEYOUROWN' bundle exec jekyll algolia
+
+```bash

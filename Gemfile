@@ -1,8 +1,7 @@
-source "https://rubygems.org"
-gemspec
+source 'https://rubygems.org'
 
-# Gemfile
+gem 'jekyll', '~> 3.6'
 
 group :jekyll_plugins do
-    gem 'jekyll-algolia', '~> 1.0'
-  end
+  gem 'jekyll-algolia'
+end
